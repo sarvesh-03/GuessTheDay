@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Guess the day</string>
+    <string name="lock">LOCK</string>
+    <string name="finish">FINISH</string>
+    <string name="score">SCORE</string>
+    <string name="next">NEXT</string>
+    <string name="start">START</string>
+</resources>

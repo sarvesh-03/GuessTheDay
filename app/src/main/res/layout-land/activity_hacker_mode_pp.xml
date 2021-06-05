@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    tools:context=".HeckerModePP">
+
+    <TextView
+        android:id="@+id/HPPQuestion"
+        style="@style/Words"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:paddingBottom="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
+
+    <RadioGroup
+        android:id="@+id/HPPradioGroup"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HPPQuestion">
+
+        <RadioButton
+            android:id="@+id/HPPOption1"
+            style="@style/Words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/HPPOption2"
+            style="@style/Words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/HPPOption3"
+            style="@style/Words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/HPPOption4"
+            style="@style/Words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="RadioButton" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/HPPstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/start"
+        android:textColor="#000000"
+        app:backgroundTint="#4CAF50"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/HPPlnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/next"
+        android:textColor="#000000"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toStartOf="@+id/HPPstart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HPPtimer"
+        style="@style/Words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
