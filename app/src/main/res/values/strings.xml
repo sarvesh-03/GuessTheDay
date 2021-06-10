@@ -5,4 +5,5 @@
     <string name="score">SCORE</string>
     <string name="next">NEXT</string>
     <string name="start">START</string>
+    <string name="ready_to_guess">Ready To Guess</string>
 </resources>

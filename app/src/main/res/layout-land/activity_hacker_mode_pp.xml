@@ -2,18 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/tan_background"
-    tools:context=".HeckerModePP">
+    tools:context=".HackerModePP">
 
     <TextView
         android:id="@+id/HPPQuestion"
         style="@style/Words"
-        android:layout_width="316dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="32dp"
         android:paddingBottom="8dp"
         android:textSize="24sp"
@@ -23,52 +24,102 @@
 
     <RadioGroup
         android:id="@+id/HPPradioGroup"
-        android:layout_width="316dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HPPQuestion">
 
         <RadioButton
             android:id="@+id/HPPOption1"
             style="@style/Words"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            tools:text="RadioButton" />
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="8dp"
+            android:ellipsize="none"
+            android:focusable="auto"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:soundEffectsEnabled="false"
+            tools:text="RadioButton"
+            android:textColor="@drawable/text_color"/>
 
         <RadioButton
             android:id="@+id/HPPOption2"
             style="@style/Words"
-            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            tools:text="RadioButton" />
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="8dp"
+            android:paddingLeft="0dp"
+            android:soundEffectsEnabled="false"
+            tools:text="RadioButton"
+            android:textColor="@drawable/text_color"/>
 
         <RadioButton
             android:id="@+id/HPPOption3"
             style="@style/Words"
-            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            tools:text="RadioButton" />
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="8dp"
+            android:paddingLeft="0dp"
+            android:soundEffectsEnabled="false"
+            tools:text="RadioButton"
+            android:textColor="@drawable/text_color"/>
 
         <RadioButton
             android:id="@+id/HPPOption4"
             style="@style/Words"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            tools:text="RadioButton" />
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            tools:text="RadioButton"
+            android:textColor="@drawable/text_color"/>
     </RadioGroup>
 
     <Button
         android:id="@+id/HPPstart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
         android:text="@string/start"
-        android:textColor="#000000"
-        app:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#5D4037"
         app:iconTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,12 +128,12 @@
         android:id="@+id/HPPlnext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:text="@string/next"
-        android:textColor="#000000"
-        app:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#5D4037"
         app:layout_constraintEnd_toStartOf="@+id/HPPstart"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,6 +146,33 @@
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/ScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:rotation="180"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="TextView" />

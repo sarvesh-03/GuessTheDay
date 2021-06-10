@@ -7,13 +7,14 @@ public class Date implements Serializable {
     private int DD;
     private int MM;
     private int YY;
+    private String[] month=new String[]{"January","February","March","April","May","June","July","August","September","October","November","December"};
     public Date(int a,int b,int c){
         DD=a;
         MM=b;
         YY=c;
     }
     public int getDD(){return DD;}
-    public int getMM(){return MM;}
+    public String getMM(){return month[MM-1];}
     public int getYY(){return YY;}
     public String getDay(){
         int CenturyOffset=getCenturyOffset();

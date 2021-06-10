@@ -12,14 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuessTheDay">
         <activity android:name=".HackerModePP"
-            android:label="HackerMode++"/>
-        <activity android:name=".HackerMode"
-            android:label="HackerMode"/>
-        <activity android:name=".result"
-            android:label="Result"/>
-        <activity android:name=".NormalMode"
-            android:label="NormalMode"
-            />
+            android:label="@string/app_name"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
